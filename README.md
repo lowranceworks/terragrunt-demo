@@ -24,6 +24,13 @@ terragrunt run-all show --terragrunt-working-dir environment-configurations
 
 ```
 terragrunt run-all state list --terragrunt-working-dir environment-configurations
+
+```
+
+### Destroy across all environments
+
+```
+terragrunt run-all destroy --terragrunt-working-dir environment-configurations
 ```
 
 ### Run a command (plan/apply/show) on a specific environment
