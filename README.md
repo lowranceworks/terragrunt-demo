@@ -14,15 +14,7 @@ terragrunt run-all plan --terragrunt-working-dir environment-configurations
 terragrunt run-all apply --terragrunt-working-dir environment-configurations
 ```
 
-### Run a command (plan/apply/show) on a specific environment
-
-```
-terragrunt run-all plan --terragrunt-working-dir environment-configurations/dev
-terragrunt run-all apply --terragrunt-working-dir environment-configurations/qa
-terragrunt run-all show --terragrunt-working-dir environment-configurations/qa
-```
-
-#### Show state for all environments
+### Show state for all environments
 
 ```
 terragrunt run-all show --terragrunt-working-dir environment-configurations
@@ -32,4 +24,12 @@ terragrunt run-all show --terragrunt-working-dir environment-configurations
 
 ```
 terragrunt run-all state list --terragrunt-working-dir environment-configurations
+```
+
+### Run a command (plan/apply/show) on a specific environment
+
+```
+terragrunt run-all plan --terragrunt-working-dir environment-configurations/dev
+terragrunt run-all apply --terragrunt-working-dir environment-configurations/qa
+terragrunt run-all show --terragrunt-working-dir environment-configurations/qa
 ```
